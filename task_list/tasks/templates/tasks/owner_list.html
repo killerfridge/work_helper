@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>This is the Owner List</h1>
+
+<ul>
+    {% for owner in owner_list %}
+    <li><a href="{{ owner.get_absolute_url }}">{{ owner.name }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

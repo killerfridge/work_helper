@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>This is the Task List</h1>
+
+<ul>
+    {% for task in task_list %}
+    <li><a href="{{ task.get_absolute_url }}">{{ task.title }}</a> - ({{ task.owner }}) - due by: {{ task.due_date }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
