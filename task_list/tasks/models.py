@@ -4,10 +4,11 @@ import datetime as dt
 
 
 # Create your models here.
-class Task(models.Model):
+class AbstractTask(models.Model):
     title = models.CharField(max_length=150, help_text='Task Name')
     owner = models.ForeignKey('Owner', null=False, blank=False, on_delete=models.CASCADE)
-    stakeholders = models.ManyToManyField('Stakeholder', blank=True)
+
+    description = models.TextField(blank=True, null=True)
 
     duration_days = models.IntegerField(default=0, null=True, blank=True)
     duration_hours = models.IntegerField(default=0, null=True, blank=True)
@@ -34,18 +35,36 @@ class Task(models.Model):
 
     class Meta:
         ordering = ['due_date']
+        abstract = True
+
+
+class Task(AbstractTask):
+    stakeholders = models.ManyToManyField('Stakeholder', blank=True)
 
     def get_absolute_url(self):
         return reverse('tasks:task-detail', kwargs={'pk': self.pk})
 
 
-class Owner(models.Model):
-    first = models.CharField(max_length=100, help_text='Task Owner\'s first name')
-    last = models.CharField(max_length=100, help_text='Task Owner\'s last name')
+class Person(models.Model):
+    first = models.CharField(max_length=100)
+    last = models.CharField(max_length=100)
     department = models.ForeignKey('Department', null=True, blank=False, on_delete=models.SET_NULL)
 
     def name(self):
         return f'{self.first} {self.last}'
+
+    def __str__(self):
+        return self.name()
+
+    def get_absolute_url(self):
+        return reverse('tasks:person-detail', kwargs={'pk': self.pk})
+
+
+class Owner(models.Model):
+    person = models.ForeignKey(Person, on_delete=models.CASCADE)
+
+    def name(self):
+        return f'{self.person.first} {self.person.last}'
 
     def __str__(self):
         return self.name()
@@ -62,12 +81,18 @@ class Department(models.Model):
 
 
 class Stakeholder(models.Model):
-    first = models.CharField(max_length=100, help_text='Task Owner\'s first name')
-    last = models.CharField(max_length=100, help_text='Task Owner\'s last name')
-    department = models.ForeignKey('Department', null=True, blank=False, on_delete=models.SET_NULL)
+    person = models.ForeignKey(Person, on_delete=models.CASCADE)
 
     def name(self):
-        return f'{self.first} {self.last}'
+        return f'{self.person.first} {self.person.last}'
 
     def __str__(self):
         return self.name()
+
+
+class SubTask(AbstractTask):
+    owner = models.ForeignKey(Owner, null=True, blank=True, on_delete=models.SET_NULL)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+
+    def get_absolute_url(self):
+        return reverse('tasks:subtask-detail', kwargs={'pk': self.pk})

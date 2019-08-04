@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="575de8c9-62fc-499b-8d26-7ba0db798977" name="Default Changelist" comment="" />
+    <list default="true" id="575de8c9-62fc-499b-8d26-7ba0db798977" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/task_list/tasks/templates/tasks/person_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_list/tasks/templates/tasks/person_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_list/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_list/tasks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_list/tasks/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_list/tasks/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_list/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_list/tasks/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_list/tasks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_list/tasks/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_list/tasks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_list/tasks/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_list/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/task_list/templates/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,33 +30,45 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task_list/tasks/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+            <state relative-caret-position="850">
+              <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#1327#1689#0" />
+                <element signature="e#1326#1802#0" />
+                <element signature="e#1841#1961#0" />
+                <element signature="e#1945#1961#0" />
+                <element signature="e#2001#2375#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task_list/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/task_list/tasks/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="66" lean-forward="true" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+            <state relative-caret-position="425">
+              <caret line="25" column="92" selection-start-line="25" selection-start-column="92" selection-end-line="25" selection-end-column="92" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/person_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -53,8 +76,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/owner_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/person_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task_list/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -75,37 +116,7 @@
         <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_list/task_list/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#633#665#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/task_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/task_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -123,10 +134,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_list/static/styles.css">
+        <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/task_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state>
+              <caret selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -142,30 +153,36 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/task_list/task_list/settings.py" />
-        <option value="$PROJECT_DIR$/task_list/tasks/admin.py" />
         <option value="$PROJECT_DIR$/task_list/tasks/migrations/__init__.py" />
         <option value="$PROJECT_DIR$/task_list/static/styles.css" />
         <option value="$PROJECT_DIR$/task_list/task_list/urls.py" />
         <option value="$PROJECT_DIR$/task_list/tasks/templates/tasks/task_detail.html" />
         <option value="$PROJECT_DIR$/task_list/tasks/templates/tasks/owner_list.html" />
-        <option value="$PROJECT_DIR$/task_list/tasks/models.py" />
         <option value="$PROJECT_DIR$/task_list/tasks/templates/tasks/task_list.html" />
         <option value="$PROJECT_DIR$/task_list/tasks/templates/tasks/index.html" />
-        <option value="$PROJECT_DIR$/task_list/tasks/views.py" />
-        <option value="$PROJECT_DIR$/task_list/tasks/urls.py" />
+        <option value="$PROJECT_DIR$/task_list/tasks/templates/tasks/person_list.html" />
         <option value="$PROJECT_DIR$/task_list/templates/base.html" />
+        <option value="$PROJECT_DIR$/task_list/tasks/urls.py" />
+        <option value="$PROJECT_DIR$/task_list/tasks/templates/tasks/person_detail.html" />
+        <option value="$PROJECT_DIR$/task_list/tasks/models.py" />
+        <option value="$PROJECT_DIR$/task_list/tasks/views.py" />
+        <option value="$PROJECT_DIR$/task_list/tasks/admin.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1315" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -201,7 +218,7 @@
               <item name="task_list" type="462c0819:PsiDirectoryNode" />
               <item name="task_list" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task_list" type="b2602c69:ProjectViewProjectNode" />
@@ -209,7 +226,6 @@
               <item name="task_list" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task_list" type="b2602c69:ProjectViewProjectNode" />
@@ -255,24 +271,20 @@
       <option name="presentableId" value="Default" />
       <updated>1564787763474</updated>
       <workItem from="1564787765758" duration="6397000" />
+      <workItem from="1564940717006" duration="7030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6397000" />
+    <option name="totallyTimeSpent" value="13427000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1315" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19601594" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12691467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -280,11 +292,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.074900396" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.10633484" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,16 +321,6 @@
     <entry file="file://$PROJECT_DIR$/task_list/tasks/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/task_list/tasks/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task_list/task_list/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -326,34 +334,7 @@
     <entry file="file://$PROJECT_DIR$/task_list/static/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/task_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_list/tasks/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_list/task_list/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
-          </folding>
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -364,27 +345,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/task_list/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/owner_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_list/tasks/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -398,10 +372,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/task_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task_list/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="66" lean-forward="true" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/owner_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/person_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/tasks/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/tasks/templates/tasks/person_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/tasks/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#1327#1689#0" />
+            <element signature="e#1326#1802#0" />
+            <element signature="e#1841#1961#0" />
+            <element signature="e#1945#1961#0" />
+            <element signature="e#2001#2375#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_list/tasks/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="92" selection-start-line="25" selection-start-column="92" selection-end-line="25" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

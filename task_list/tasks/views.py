@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, DeleteView
-from .models import Task, Department, Owner, Stakeholder
+from .models import Task, Department, Owner, Stakeholder, Person
 
 
 # Create your views here.
@@ -13,11 +13,14 @@ class TaskDetailView(DetailView):
 
 
 class OwnerDetailView(DetailView):
-    model = Owner
+    model = Person
 
 
 class OwnerListView(ListView):
-    model = Owner
+    model = Person
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
 
 
 def index(request):
