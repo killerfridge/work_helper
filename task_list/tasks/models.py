@@ -101,3 +101,10 @@ class SubTask(AbstractTask):
 
     def get_absolute_url(self):
         return reverse('tasks:subtask-detail', kwargs={'pk': self.pk})
+
+    def save(self, *args, **kwargs):
+        if self.started:
+            if not self.task.started:
+                self.task.started = True
+                self.task.save()
+        super().save(*args, **kwargs)

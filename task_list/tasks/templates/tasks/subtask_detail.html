@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Task Name: {{ subtask.title }}</h1>
+<h3>{{ subtask.owner }}</h3>
+<p>This task is due by {{ subtask.due_date }} and should be started by {{ subtask.start_by }}</p>
+<h3>Description</h3>
+<p>{{ subtask.description }}</p>
+<hr>
+<h5>Task Status</h5>
+{% if subtask.started %}<p class="text-success">Task Started</p>
+{% else %}<p class="text-danger">Task Not Started</p>{% endif %}
+{% if subtask.finished %}<p class="text-success">Task Completed</p>
+{% else %}<p class="text-danger">Task Incomplete</p>{% endif %}
+{% endblock %}

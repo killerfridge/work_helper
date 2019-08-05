@@ -4,7 +4,7 @@
 
 <ul>
     {% for task in task_list %}
-    <li><a href="{{ task.get_absolute_url }}">{{ task.title }}</a> - ({{ task.owner }}) - due by: {{ task.due_date }}</li>
+    <li><a href="{{ task.get_absolute_url }}">{{ task.title }}</a> - <a href="{{ task.owner.person.get_absolute_url }}">({{ task.owner }})</a> - due by: {{ task.due_date }}</li>
     {% endfor %}
 </ul>
 

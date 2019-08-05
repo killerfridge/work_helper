@@ -3,8 +3,8 @@
 <h1>This is the Task Users List</h1>
 
 <ul>
-    {% for owner in person_list %}
-    <li><a href="{{ owner.get_absolute_url }}">{{ owner.name }}</a></li>
+    {% for person in person_list %}
+    <li><a href="{{ person.get_absolute_url }}">{{ person.name }}</a></li>
     {% endfor %}
 </ul>
 

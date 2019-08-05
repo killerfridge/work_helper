@@ -2,11 +2,31 @@
 {% block content %}
 <h1>Task Name: {{ task.title }}</h1>
 <h3>{{ task.owner }}</h3>
+<h5>
+{% for stakeholder in task.stakeholders_set.all %}
+{{ stakeholder }},
+    {% endfor %}</h5>
 <p>This task is due by {{ task.due_date }} and should be started by {{ task.start_by }}</p>
+<h3>Description</h3>
+<p>{{ task.description }}</p>
 <hr>
 <h5>Task Status</h5>
-{% if task.started %}<p class="text-succuess">Task Started</p>
-{% else %}<p class="text-danger">Task Not Started</p>{% endif %}
-{% if task.finished %}<p class="text-succuess">Task Completed</p>
-{% else %}<p class="text-danger">Task Incomplete</p>{% endif %}
+{% if task.started %}<span class="text-success">Task Started</span>
+{% else %}<span class="text-danger">Task Not Started</span>{% endif %} -
+{% if task.finished %}<span class="text-success">Task Completed</span>
+{% else %}<span class="text-danger">Task Incomplete</span>{% endif %}
+<hr>
+<h5>Sub Task Status</h5>
+<ul>
+{% for sub_task in task.subtask_set.all %}
+    <li><a href="{{ sub_task.get_absolute_url }}">{{ sub_task.title }}</a> - due {{ sub_task.due_date }}<br>
+        {% if sub_task.started %} <p class="text-success">Task Started
+        {% if sub_task.finished %} - Task Completed</p>
+        {% else %}<span class="text-danger"> - Task Incomplete</span></p>
+        {% endif %}
+        {% else %}<p class="text-danger">Task Not Started</p>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
 {% endblock %}

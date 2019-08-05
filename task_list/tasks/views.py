@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, DeleteView
-from .models import Task, Department, Owner, Stakeholder, Person
+from .models import Task, Department, Owner, Stakeholder, Person, SubTask
 
 
 # Create your views here.
@@ -25,3 +25,11 @@ class OwnerListView(ListView):
 
 def index(request):
     return render(request, 'tasks/index.html')
+
+
+class SubTaskDetailView(DetailView):
+    model = SubTask
+
+
+class PersonDetailView(DetailView):
+    model = Person

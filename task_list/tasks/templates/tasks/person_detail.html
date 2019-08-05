@@ -1,4 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Person Name: {{ person.name }}</h1>
+<hr>
+<h3>Tasks</h3>
+<ul>
+{% for owner in person.owner_set.all %}
+    {% for task in owner.task_set.all %}
+    <li><a href="{{ task.get_absolute_url }}">{{ task.title }}</a> - {{ task.due_date }}</li>
+    {% endfor %}
+{% endfor %}
+</ul>
+<hr>
+<h3>Task Stakeholder</h3>
+{% for stakeholder in person.stakeholder_set.all %}
+    {% for task in stakeholder.task_set.all %}
+    <li><a href="{{ task.get_absolute_url }}">{{ task.title }}</a> - {{ task.due_date }}</li>
+    {% endfor %}
+{% endfor %}
 {% endblock %}
