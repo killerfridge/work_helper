@@ -59,6 +59,11 @@ class Person(models.Model):
     def get_absolute_url(self):
         return reverse('tasks:person-detail', kwargs={'pk': self.pk})
 
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        Owner.objects.create(person=self)
+        Stakeholder.objects.create(person=self)
+
 
 class Owner(models.Model):
     person = models.ForeignKey(Person, on_delete=models.CASCADE)
