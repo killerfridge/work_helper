@@ -98,7 +98,7 @@ class Stakeholder(models.Model):
 class SubTask(AbstractTask):
     owner = models.ForeignKey(Owner, null=True, blank=True, on_delete=models.SET_NULL)
     task = models.ForeignKey(Task, on_delete=models.CASCADE)
-    worktime = models.DecimalField(default=0, decimal_places=5, max_digits=300)
+    work_time = models.DecimalField(default=0, decimal_places=5, max_digits=300)
 
     def get_absolute_url(self):
         return reverse('tasks:subtask-detail', kwargs={'pk': self.pk})
